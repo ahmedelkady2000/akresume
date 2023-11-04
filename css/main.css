@@ -1,0 +1,87 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: azure;
+  transition: 400ms;
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+}
+:root {
+  --mc1: rgb(46, 53, 55);
+  --mc2: rgb(64, 41, 57);
+  --mc3: rgb(37, 33, 51);
+
+  --mtc: azure;
+
+  --mca1: rgba(46, 53, 55, 0.9);
+  --mca2: rgba(64, 41, 57, 0.9);
+  --mca3: rgba(37, 33, 51, 0.9);
+}
+.bgmca1 {
+  background-color: var(--mca1);
+}
+.bgmca2 {
+  background-color: var(--mca2);
+}
+.bgmca3 {
+  background-color: var(--mca3);
+}
+.bgmc1 {
+  background-color: var(--mc1);
+}
+.bgmc2 {
+  background-color: var(--mc2);
+}
+.bgmc3 {
+  background-color: var(--mc3);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+/* Header & Footer */
+.mylinks i {
+  font-size: 2em;
+}
+.mylinks i:hover {
+  transform: scale(1.3) rotate(15deg);
+  -webkit-transform: scale(1.3) rotate(15deg);
+  -moz-transform: scale(1.3) rotate(15deg);
+  -ms-transform: scale(1.3) rotate(15deg);
+  -o-transform: scale(1.3) rotate(15deg);
+}
+.mypages {
+  background: url(../img/bg1.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.pagelink a {
+  text-decoration: none;
+  color: var(--mtc);
+  text-align: center;
+}
+.mypageslinks .actev {
+  padding: 1rem;
+  border: 2px solid var(--mtc);
+  border-radius: 2rem 1rem 2rem 1rem;
+  -webkit-border-radius: 2rem 1rem 2rem 1rem;
+  -moz-border-radius: 2rem 1rem 2rem 1rem;
+  -ms-border-radius: 2rem 1rem 2rem 1rem;
+  -o-border-radius: 2rem 1rem 2rem 1rem;
+}
+.mypageslinks .actev:hover {
+  border-radius: 1rem 2rem 1rem 2rem;
+  -webkit-border-radius: 1rem 2rem 1rem 2rem;
+  -moz-border-radius: 1rem 2rem 1rem 2rem;
+  -ms-border-radius: 1rem 2rem 1rem 2rem;
+  -o-border-radius: 1rem 2rem 1rem 2rem;
+}

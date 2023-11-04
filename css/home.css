@@ -1,0 +1,29 @@
+main > section.pi {
+  background: url(../img/IMG_1.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.myimg > img {
+  border-radius: 3rem 1rem 3rem 1rem;
+  -webkit-border-radius: 3rem 1rem 3rem 1rem;
+  -moz-border-radius: 3rem 1rem 3rem 1rem;
+  -ms-border-radius: 3rem 1rem 3rem 1rem;
+  -o-border-radius: 3rem 1rem 3rem 1rem;
+  border: 0.8rem double var(--mtc);
+}
+.myimg > img:hover {
+  border-radius: 1rem 3rem 1rem 3rem;
+  -webkit-border-radius: 1rem 3rem 1rem 3rem;
+  -moz-border-radius: 1rem 3rem 1rem 3rem;
+  -ms-border-radius: 1rem 3rem 1rem 3rem;
+  -o-border-radius: 1rem 3rem 1rem 3rem;
+}
+.pi .pitem {
+  padding: 1rem 0;
+}
+.pi .pitem h5 {
+  padding-left: 1rem;
+}
