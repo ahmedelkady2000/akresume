@@ -1,11 +1,16 @@
 main > section.pi {
   background: url(../img/IMG_1.webp);
+}
+main > section.st {
+  background: url(../img/IMG_2.webp);
+}
+main > section.pi,
+main > section.st {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top right;
 }
-
 .myimg > img {
   border-radius: 3rem 1rem 3rem 1rem;
   -webkit-border-radius: 3rem 1rem 3rem 1rem;
@@ -21,9 +26,22 @@ main > section.pi {
   -ms-border-radius: 1rem 3rem 1rem 3rem;
   -o-border-radius: 1rem 3rem 1rem 3rem;
 }
-.pi .pitem {
+section.pi .pitem,
+section.st .scientific {
   padding: 1rem 0;
 }
-.pi .pitem h5 {
+section.pi .pitem > h5,
+section.st .scientific > h5 {
   padding-left: 1rem;
+}
+section.st .scientific h3 {
+  position: relative;
+}
+section.st .scientific h3::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  height: 100%;
+  width: 5px;
+  background-color: var(--mc3);
 }
