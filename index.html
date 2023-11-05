@@ -85,10 +85,26 @@
       </nav>
     </header>
     <main>
+      <section class="imgviewer bgmca1">
+        <div class="mybtn m-4">
+          <button
+            type="button"
+            class="btn-close btn-close-white xbtn"
+            id="imgbtn"
+          ></button>
+        </div>
+        <div
+          class="w-75 d-flex justify-content-center align-items-center m-auto"
+          id="singelimg"
+        ></div>
+      </section>
       <section class="pi container-fluid p-0">
         <div class="bgmca3 p-5">
-          <div class="myname text-center m-3">
-            <h1><b>Ahmed Said Ismaiel Othman El-Kady</b></h1>
+          <div class="myname text-center py-3 my-3">
+            <h1 class="pt-4"><b>Ahmed Said Ismaiel Othman El-Kady</b></h1>
+            <h5 class="pb-4">
+              Quality Coordinator in “E-Learning Unit” Aswan University
+            </h5>
           </div>
           <div class="personal d-flex flex-wrap justify-content-center">
             <div class="col-12 col-md-6">
@@ -102,19 +118,31 @@
             </div>
             <div class="personalinformation p-3 m-3col-12 col-md-5">
               <div class="pitem">
-                <div class="pitem">
-                  <h3>Nationality</h3>
-                  <h5>Egyptian</h5>
-                </div>
+                <h3>Nationality</h3>
+                <h5>Egyptian</h5>
+              </div>
+              <div class="pitem">
                 <h3>Mobile</h3>
-                <h5>+201112175354</h5>
-                <h5>+201222340820</h5>
+                <h5><a href="tel:+201112175354">+20 111 217 5354</a></h5>
+                <h5><a href="tel:+201222340820">+20 122 234 0820</a></h5>
               </div>
               <div class="pitem">
                 <h3>E-mail</h3>
-                <h5>ahmed.elkady@aswu.edu.eg</h5>
-                <h5>ahmed_el_kady2000@yahoo.com</h5>
-                <h5>elkady.ahmed2000@gmail.com</h5>
+                <h5>
+                  <a href="mailto:ahmed.elkady@aswu.edu.eg"
+                    >ahmed.elkady@aswu.edu.eg</a
+                  >
+                </h5>
+                <h5>
+                  <a href="mailto:ahmed_el_kady2000@yahoo.com"
+                    >ahmed_el_kady2000@yahoo.com</a
+                  >
+                </h5>
+                <h5>
+                  <a href="mailto:elkady.ahmed2000@gmail.com"
+                    >elkady.ahmed2000@gmail.com</a
+                  >
+                </h5>
               </div>
               <div class="pitem">
                 <h3>Address</h3>
@@ -149,11 +177,11 @@
       </section>
       <section class="st container-fluid p-0">
         <div class="bgmca2 p-5">
-          <div class="st-title text-center m-3">
+          <div class="st-title text-center m-3 py-3">
             <h1><b>Scientific Transcript</b></h1>
           </div>
-          <div class="d-flex justify-content-around flex-wrap">
-            <div class="scientific col-12 col-lg-5">
+          <div class="d-flex justify-content-around flex-wrap pt-5">
+            <div class="scientific col-12 col-lg-5 mb-3">
               <h3>bachelor's degree Of</h3>
               <h3><b>Business Management</b></h3>
               <h3>(Division of Management Information Systems)</h3>
@@ -163,13 +191,29 @@
                 University
               </h5>
               <h5>From: 2006 to 2010</h5>
+              <button class="btn w-25" id="serImgBach" onclick="showImg(0)">
+                <img
+                  src="img/bachelor-img-s.webp"
+                  alt="ahmed-bachelor-img"
+                  class="w-100"
+                />
+              </button>
             </div>
-            <div class="scientific col-12 col-lg-5">
+            <div class="scientific col-12 col-lg-5 mb-3">
               <h3>diploma degree Of</h3>
               <h3><b>Educational Diploma</b></h3>
+              <br />
+              <br />
               <h5>Rating: Good</h5>
               <h5>In: Faculty of Education - Aswan University</h5>
               <h5>Academic year 2014-2015</h5>
+              <button class="btn w-25" id="serImgDip" onclick="showImg(1)">
+                <img
+                  src="img/diploma-img-s.webp"
+                  alt="ahmed-diploma-img"
+                  class="w-100"
+                />
+              </button>
             </div>
           </div>
         </div>

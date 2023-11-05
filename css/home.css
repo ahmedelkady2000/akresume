@@ -1,3 +1,24 @@
+section.imgviewer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: -105%;
+  top: 0;
+}
+.imgviewerok {
+  left: 0 !important;
+}
+section.imgviewer {
+  z-index: 5;
+}
+#singelimg > img {
+  height: 80vh;
+}
+.xbtn {
+  padding: 8px;
+  border: 2px solid var(--mtc);
+}
+
 main > section.pi {
   background: url(../img/IMG_1.webp);
 }
@@ -34,14 +55,33 @@ section.pi .pitem > h5,
 section.st .scientific > h5 {
   padding-left: 1rem;
 }
-section.st .scientific h3 {
+section.st .scientific h3,
+section.pi .pitem > h3 {
   position: relative;
 }
-section.st .scientific h3::before {
+section.st .scientific h3::before,
+section.pi .pitem > h3::before {
   content: "";
   position: absolute;
   left: -20px;
   height: 100%;
   width: 5px;
+}
+section.st .scientific h3::before {
   background-color: var(--mc3);
+}
+
+section.pi .pitem > h3::before {
+  background-color: var(--mc2);
+}
+
+section.pi .pitem > h5 > a {
+  text-decoration: none;
+  color: var(--mtc);
+  padding: 0;
+}
+section.st .scientific button {
+  margin: 1rem 0rem;
+  width: fit-content;
+  height: fit-content;
 }
