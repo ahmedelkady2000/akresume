@@ -12,7 +12,8 @@ section.imgviewer {
   z-index: 5;
 }
 #singelimg > img {
-  height: 80vh;
+  max-height: 80vh;
+  max-width: 90vw;
 }
 .xbtn {
   padding: 8px;
@@ -25,8 +26,12 @@ main > section.pi {
 main > section.st {
   background: url(../img/IMG_2.webp);
 }
+main > section.lan {
+  background: url(../img/IMG_4.webp);
+}
 main > section.pi,
-main > section.st {
+main > section.st,
+main > section.lan {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -52,22 +57,26 @@ section.st .scientific {
   padding: 1rem 0;
 }
 section.pi .pitem > h5,
-section.st .scientific > h5 {
+section.st .scientific > h5,
+section.lan .mylan h5 {
   padding-left: 1rem;
 }
 section.st .scientific h3,
-section.pi .pitem > h3 {
+section.pi .pitem > h3,
+section.lan .mylan h3 {
   position: relative;
 }
 section.st .scientific h3::before,
-section.pi .pitem > h3::before {
+section.pi .pitem > h3::before,
+section.lan .mylan h3::before {
   content: "";
   position: absolute;
   left: -20px;
   height: 100%;
   width: 5px;
 }
-section.st .scientific h3::before {
+section.st .scientific h3::before,
+section.lan .mylan h3::before {
   background-color: var(--mc3);
 }
 
@@ -80,7 +89,8 @@ section.pi .pitem > h5 > a {
   color: var(--mtc);
   padding: 0;
 }
-section.st .scientific button {
+section.st .scientific button,
+section.lan .mylan button {
   margin: 1rem 0rem;
   width: fit-content;
   height: fit-content;

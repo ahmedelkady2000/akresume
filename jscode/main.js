@@ -5,14 +5,18 @@ const sectionImgviewer = document.querySelector("section.imgviewer");
 
 const singelimg = document.getElementById("singelimg");
 
-let imgArry = ["img/bachelor-img.webp", "img/diploma-img.webp"];
+let imgArry = [
+  "img/bachelor-img.webp",
+  "img/diploma-img.webp",
+  "img/axon-img.webp",
+];
 
 my1btn.onclick = () => {
   sectionImgviewer.classList.remove("imgviewerok");
   singelimg.innerHTML = ``;
 };
 
-function showImg(ak) {
-  singelimg.innerHTML = `<img src="${imgArry[ak]}">`;
+function showImg(idx, alt) {
+  singelimg.innerHTML = `<img src="${imgArry[idx]}" alt="${alt}">`;
   sectionImgviewer.classList.add("imgviewerok");
 }
