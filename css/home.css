@@ -29,9 +29,13 @@ main > section.st {
 main > section.lan {
   background: url(../img/IMG_4.webp);
 }
+main > section.tr {
+  background: url(../img/IMG_5.webp);
+}
 main > section.pi,
 main > section.st,
-main > section.lan {
+main > section.lan,
+main > section.tr {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -58,17 +62,20 @@ section.st .scientific {
 }
 section.pi .pitem > h5,
 section.st .scientific > h5,
-section.lan .mylan h5 {
+section.lan .mylan h5,
+section.tr .trallitems > .item > h5 {
   padding-left: 1rem;
 }
 section.st .scientific h3,
 section.pi .pitem > h3,
-section.lan .mylan h3 {
+section.lan .mylan h3,
+section.tr .trallitems > .item > h3 {
   position: relative;
 }
 section.st .scientific h3::before,
 section.pi .pitem > h3::before,
-section.lan .mylan h3::before {
+section.lan .mylan h3::before,
+section.tr .trallitems > .item > h3::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -76,7 +83,8 @@ section.lan .mylan h3::before {
   width: 5px;
 }
 section.st .scientific h3::before,
-section.lan .mylan h3::before {
+section.lan .mylan h3::before,
+section.tr .trallitems > .item > h3::before {
   background-color: var(--mc3);
 }
 
@@ -94,4 +102,23 @@ section.lan .mylan button {
   margin: 1rem 0rem;
   width: fit-content;
   height: fit-content;
+}
+button.btnpointerbtn {
+  position: relative;
+}
+button.btnpointerbtn > span.btnspan {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid var(--mtc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

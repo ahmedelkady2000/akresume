@@ -9,6 +9,9 @@ let imgArry = [
   "img/bachelor-img.webp",
   "img/diploma-img.webp",
   "img/axon-img.webp",
+  "img/nti-img.webp",
+  "img/iti2-img.webp",
+  "img/iti1-img.webp",
 ];
 
 my1btn.onclick = () => {
