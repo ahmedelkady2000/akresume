@@ -1,7 +1,5 @@
 const my1btn = document.getElementById("imgbtn");
 const sectionImgviewer = document.querySelector("section.imgviewer");
-// const serImgBach = document.getElementById("serImgBach");
-// const serImgDip = document.getElementById("serImgDip");
 
 const singelimg = document.getElementById("singelimg");
 
@@ -12,6 +10,8 @@ let imgArry = [
   "img/nti-img.webp",
   "img/iti2-img.webp",
   "img/iti1-img.webp",
+  "img/aswan1-img.webp",
+  "img/aswan2-img.webp",
 ];
 
 my1btn.onclick = () => {

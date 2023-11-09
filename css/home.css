@@ -32,10 +32,10 @@ main > section.lan {
 main > section.tr {
   background: url(../img/IMG_5.webp);
 }
-main > section.pi,
-main > section.st,
-main > section.lan,
-main > section.tr {
+main > section.cs {
+  background: url(../img/IMG_7.webp);
+}
+main > section.backimg {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -63,18 +63,21 @@ section.st .scientific {
 section.pi .pitem > h5,
 section.st .scientific > h5,
 section.lan .mylan h5,
+section.cs .item h5,
 section.tr .trallitems > .item > h5 {
   padding-left: 1rem;
 }
 section.st .scientific h3,
 section.pi .pitem > h3,
 section.lan .mylan h3,
+section.cs .item h3,
 section.tr .trallitems > .item > h3 {
   position: relative;
 }
 section.st .scientific h3::before,
 section.pi .pitem > h3::before,
 section.lan .mylan h3::before,
+section.cs .item h3::before,
 section.tr .trallitems > .item > h3::before {
   content: "";
   position: absolute;
@@ -88,7 +91,8 @@ section.tr .trallitems > .item > h3::before {
   background-color: var(--mc3);
 }
 
-section.pi .pitem > h3::before {
+section.pi .pitem > h3::before,
+section.cs .item h3::before {
   background-color: var(--mc2);
 }
 
@@ -121,4 +125,9 @@ button.btnpointerbtn > span.btnspan {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+img.csimg {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
 }

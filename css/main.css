@@ -16,9 +16,9 @@
 
   --mtc: azure;
 
-  --mca1: rgba(46, 53, 55, 0.9);
-  --mca2: rgba(64, 41, 57, 0.9);
-  --mca3: rgba(37, 33, 51, 0.9);
+  --mca1: rgba(46, 53, 55, 0.8);
+  --mca2: rgba(64, 41, 57, 0.8);
+  --mca3: rgba(37, 33, 51, 0.8);
 }
 .bgmca1 {
   background-color: var(--mca1);
