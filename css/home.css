@@ -139,9 +139,13 @@ img.csimg {
   padding: 0;
 }
 
-section.we .weitems > .we-s-item > h5 > a {
+a.welink {
+  width: fit-content;
   text-decoration: none;
-  color: var(--mc3);
+}
+a.welink > div {
+  width: min-content;
+  height: min-content;
   background-color: var(--mtc);
   padding: 5px 15px;
   border-radius: 10px;
@@ -150,9 +154,17 @@ section.we .weitems > .we-s-item > h5 > a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+section.we a.welink > div > h6 {
+  text-align: center;
+}
+section.we a.welink > div > h6 > b {
+  color: var(--mc3);
+}
 
-section.we .weitems > .we-s-item > h5 > a:hover {
-  color: var(--mtc);
+section.we a.welink > div:hover {
   background-color: var(--mc1);
   box-shadow: 0 0 5px 1px var(--mtc);
+}
+section.we a.welink > div:hover > h6 > b {
+  color: var(--mtc);
 }
