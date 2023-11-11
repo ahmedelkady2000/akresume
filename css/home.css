@@ -35,6 +35,9 @@ main > section.tr {
 main > section.cs {
   background: url(../img/IMG_7.webp);
 }
+main > section.we {
+  background: url(../img/IMG_6.webp);
+}
 main > section.backimg {
   background-size: cover;
   background-attachment: fixed;
@@ -64,21 +67,24 @@ section.pi .pitem > h5,
 section.st .scientific > h5,
 section.lan .mylan h5,
 section.cs .item h5,
-section.tr .trallitems > .item > h5 {
+section.tr .trallitems > .item > h5,
+section.we h5 {
   padding-left: 1rem;
 }
 section.st .scientific h3,
 section.pi .pitem > h3,
 section.lan .mylan h3,
 section.cs .item h3,
-section.tr .trallitems > .item > h3 {
+section.tr .trallitems > .item > h3,
+section.we h3 {
   position: relative;
 }
 section.st .scientific h3::before,
 section.pi .pitem > h3::before,
 section.lan .mylan h3::before,
 section.cs .item h3::before,
-section.tr .trallitems > .item > h3::before {
+section.tr .trallitems > .item > h3::before,
+section.we h3::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -87,7 +93,8 @@ section.tr .trallitems > .item > h3::before {
 }
 section.st .scientific h3::before,
 section.lan .mylan h3::before,
-section.tr .trallitems > .item > h3::before {
+section.tr .trallitems > .item > h3::before,
+section.we h3::before {
   background-color: var(--mc3);
 }
 
@@ -130,4 +137,22 @@ img.csimg {
   width: 5rem;
   height: 5rem;
   padding: 0;
+}
+
+section.we .weitems > .we-s-item > h5 > a {
+  text-decoration: none;
+  color: var(--mc3);
+  background-color: var(--mtc);
+  padding: 5px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+section.we .weitems > .we-s-item > h5 > a:hover {
+  color: var(--mtc);
+  background-color: var(--mc1);
+  box-shadow: 0 0 5px 1px var(--mtc);
 }

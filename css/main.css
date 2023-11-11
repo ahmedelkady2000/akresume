@@ -85,3 +85,8 @@ h6 {
   -ms-border-radius: 1rem 2rem 1rem 2rem;
   -o-border-radius: 1rem 2rem 1rem 2rem;
 }
+.longtext {
+  text-align: justify;
+  text-justify: auto;
+  text-indent: 40px;
+}
