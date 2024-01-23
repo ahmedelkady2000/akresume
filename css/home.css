@@ -168,3 +168,6 @@ section.we a.welink > div:hover {
 section.we a.welink > div:hover > h6 > b {
   color: var(--mtc);
 }
+.txtR{
+  text-align: right;
+}
