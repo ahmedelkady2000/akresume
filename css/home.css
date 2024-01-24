@@ -91,6 +91,15 @@ section.we h3::before {
   height: 100%;
   width: 5px;
 }
+section.st .scientific h3.rtl::before,
+section.pi .pitem > h3.rtl::before,
+section.lan .mylan h3.rtl::before,
+section.cs .item h3.rtl::before,
+section.tr .trallitems > .item > h3.rtl::before,
+section.we h3.rtl::before{
+  left: auto !important;
+  right: -20px !important;
+}
 section.st .scientific h3::before,
 section.lan .mylan h3::before,
 section.tr .trallitems > .item > h3::before,
