@@ -1,3 +1,9 @@
+main > section.one {
+  background: url(../img/port-bg4.webp);
+}
+main > section.two {
+  background: url(../img/port-bg1.webp);
+}
 main > section.backimg {
   background-size: cover;
   background-attachment: fixed;
@@ -5,25 +11,18 @@ main > section.backimg {
   background-position: top right;
 }
 
-main > section.one {
-  background: url(../img/port-bg1.webp);
-}
-main > section.two {
-  background: url(../img/port-bg2.webp);
-}
-
 .port.scormIMG > div {
   box-shadow: 0 0 5px 8px var(--mc1);
 }
 .port.scormIMG > div:hover {
-  background-color: var(--mca1);
+  background-color: var(--mc1);
 }
 
 .port.gdIMG > div {
   box-shadow: 0 0 5px 8px var(--mc3);
 }
 .port.gdIMG > div:hover {
-  background-color: var(--mca3);
+  background-color: var(--mc3);
 }
 
 .port > div {
@@ -39,6 +38,7 @@ main > section.two {
   -o-border-radius: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 .port > div:hover {
+  outline: 2px solid var(--mtc);
   transform: scale(1.07);
   border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
   -webkit-border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
@@ -51,6 +51,8 @@ main > section.two {
   -o-transform: scale(1.07);
 }
 .port > div:hover > img {
+  /* outline: 2px solid var(--mtc); */
+  box-shadow: 0 0 10px 3px var(--mtc);
   border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
   -webkit-border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
   -moz-border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
