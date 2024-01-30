@@ -81,6 +81,7 @@
             <a href="../index.html">
               <h3>English Resume</h3>
             </a>
+            <hr />
             <a href="index-ar.html">
               <h3>السيرة الذاتية عربى</h3>
             </a>
@@ -94,6 +95,9 @@
       </nav>
     </header>
     <main dir="rtl">
+      <section id="goZero" class="zero">
+        <i class="fa-solid fa-arrow-up"></i>
+      </section>
       <section class="one backimg">
         <div class="scorm bgmca1 py-5">
           <div class="title p-5 text-center bgmc1 mb-3">
@@ -484,7 +488,9 @@
                   تم تصميم موقع كامل هدفة تسهيل عملية تسجيل الطلاب الذكور بجامعة
                   أسوان فى التربية العسكرية
                 </h5>
-                <h5>ثم استخراج تقرير بالطلاب المسجيل و تسليمة للجهة المختصة</h5>
+                <h5>
+                  ثم استخراج تقرير بالطلاب المسجلين و تسليمة للجهة المختصة
+                </h5>
                 <h5>
                   Full Stack &#123; Front End &#184; Back End &#184; Database
                   &#125;
@@ -562,6 +568,12 @@
       </div>
     </footer>
     <script src="../jscode/bootstrap.bundle.min.js"></script>
-    <script src="../jscode/main.js"></script>
+    <!-- <script src="../jscode/main.js"></script> -->
+    <script>
+      const topBtn = document.getElementById("goZero");
+      topBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
