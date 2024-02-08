@@ -7,6 +7,9 @@ main > section.two {
 main > section.three {
   background: url(../img/port-bg5.webp);
 }
+main > section.four {
+  background: url(../img/port-bg3.webp);
+}
 main > section.backimg {
   background-size: cover;
   background-attachment: fixed;
@@ -14,10 +17,12 @@ main > section.backimg {
   background-position: top right;
 }
 
-.port.scormIMG > div {
+.port.scormIMG > div,
+.port.vEd > div {
   box-shadow: 0 0 5px 8px var(--mc1);
 }
-.port.scormIMG > div:hover {
+.port.scormIMG > div:hover,
+.port.vEd > div:hover {
   background-color: var(--mc1);
 }
 .port.gdIMG > div {
@@ -89,5 +94,8 @@ h6 > a {
 }
 .webDimg a {
   /* text-decoration: none; */
+  color: var(--mtc);
+}
+.vEd a {
   color: var(--mtc);
 }
